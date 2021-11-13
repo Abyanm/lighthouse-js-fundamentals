@@ -21,3 +21,18 @@ console.log( "Hello" + 5*10)
 var quote = "Stay awhile and listen!";
 console.log(quote[6]);
 "3">1
+
+
+const chooseStations = (stations) => {
+    const goodStations = [];
+    for (const station of stations) {
+        const capacity = station [1];
+        if (capacity >= 20){
+            const type = station [2];
+            if (type === "community centre" || type === "school") {
+                goodStations.push(station(0))
+            }
+        }
+    }
+    return goodStations
+}
